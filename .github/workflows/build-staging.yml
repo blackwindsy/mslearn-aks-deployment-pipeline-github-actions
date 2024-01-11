@@ -37,8 +37,8 @@ jobs:
 			- name: Build and push staging image
   			# You may pin to the exact commit or the version.
   			# uses: docker/build-push-action@4a13e500e55cf31b7a5d59a38ab2040ab0f42f56
-  			uses: docker/build-push-action@v5.1.0
-  			with:
+  			  uses: docker/build-push-action@v5.1.0
+  			  with:
   				# Build's context is the set of files located in the specified PATH or URL
   				context: .
   				# Push is a shorthand for --output=type=registry
@@ -53,5 +53,5 @@ jobs:
 			# Runs a set of commands using the runners shell
 			- name: Run a multi-line script
 			  run: |
-    			echo Add other actions to build,
-    			echo test, and deploy your project.
+    				echo Add other actions to build,
+    				echo test, and deploy your project.
